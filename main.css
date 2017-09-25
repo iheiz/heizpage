@@ -1,0 +1,11 @@
+.container .footer {
+    font-family: 'Montserrat-Regular', verdana;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 63px;
+    margin: 0 15%;
+    z-index: 1;
+}

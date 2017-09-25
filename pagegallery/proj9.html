@@ -1,0 +1,71 @@
+<script>
+    $('.ga08').click(function(e){ 
+        e.preventDefault();
+        console.log("entra a click");
+
+        $.get( "pagegallery/proj8.html", function( data ) {
+            console.log("entra a get");
+            $( ".contentload" ).html( data );
+            $(".contentFloat").show();
+        });
+
+    });
+    $('.ga10').click(function(e){ 
+        e.preventDefault();
+        console.log("entra a click");
+
+        $.get( "pagegallery/proj10.html", function( data ) {
+            console.log("entra a get");
+            $( ".contentload" ).html( data );
+            $(".contentFloat").show();
+        });
+
+    });
+</script>
+<div class="contentgallery">
+
+
+
+
+    <div class="galleryimage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-1">
+                    <div class="gallerytitle">The Becatles poster 9</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1" style="margin-top:160px;">
+                    <button type="button" class="ga08" style="background:transparent; border:0px;">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </button>
+                </div>
+                <div class="col-md-10">
+                    <img class="gaimg click" style="width:680px; height:354px;" src="images/galeria/proj1.png">
+                </div>
+                <div class="col-md-1" style="margin-top:160px;">
+                    <button type="button" class="ga10" style="background:transparent; border:0px;">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="gallerytext">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-2" style="margin-left:88px;">
+                <br>
+                <br>
+                Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.
+            </div>
+        </div>
+
+    </div>
+
+</div>
