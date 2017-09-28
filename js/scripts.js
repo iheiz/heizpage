@@ -270,8 +270,17 @@ $(function() {
     }// sizeChanges
     function gotoScreen (page) {
         indexPage = page;
-        if(page == 1) {
+        if(page === 1) {
             winWidth = $(".page-main").width();
+        }
+        if(page === 2) {
+            winWidth = $(".page-galeria").width();
+        }
+        if(page === 3) {
+            winWidth = $(".page-investigacion").width();
+        }
+        if(page === 4) {
+            winWidth = $(".page-estrategia").width();
         }
         $('.pages-container').animate({left: -winWidth * page}, "slow", function() {  });
     }// gotoScreen
