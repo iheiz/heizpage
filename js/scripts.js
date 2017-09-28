@@ -270,6 +270,9 @@ $(function() {
     }// sizeChanges
     function gotoScreen (page) {
         indexPage = page;
+        if(page == 1) {
+            winWidth = $(".page-main").width();
+        }
         $('.pages-container').animate({left: -winWidth * page}, "slow", function() {  });
     }// gotoScreen
 

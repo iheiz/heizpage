@@ -66,7 +66,7 @@
     float: left;
     min-width: 800px;
     min-height: 600px;
-    overflow: hidden;
+    overflow: auto;
 }
 .page-container .page {
     /*border: 1px solid #000;*/
@@ -105,7 +105,7 @@
         font-size: 27.5px;
         position: absolute;
         top: 298px;
-        left: 27%;
+        left: 25%;
     }
 
     .container .menuTop ul li {
@@ -114,6 +114,10 @@
 
     .circle-svg {
         left: 37% !important;
+    }
+
+    .page-bio .page .photo img {
+        margin: 0 0 0 22px !important;
     }
 }
 
@@ -126,10 +130,10 @@
         left: 27%;
     }
 
-    .container .menuTop ul li {
-        float: none !important; 
+    .page-bio .page .photo img {
+        margin: 0 0 0 30px !important;
     }
-
+    
     .circle-svg {
         left: 37% !important;
     }
@@ -165,10 +169,6 @@
         left: 27%;
     }
 
-    .container .menuTop ul li {
-        float: none !important; 
-    }
-
     .circle-svg {
         left: 37% !important;
     }
@@ -183,10 +183,6 @@
         position: absolute;
         top: 298px;
         left: 37% !important;
-    }
-
-    .container .menuTop ul li {
-        float: none !important; 
     }
 
     .circle-svg {
@@ -303,7 +299,7 @@
     left: 67px;
     top: 193px;
     /*border: 1px solid #C7C7C7;*/
-    background: #FFFF00;
+    /*background: #FFFF00;*/
     width: 417px;
     height: 379px;
 }
