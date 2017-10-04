@@ -96,101 +96,6 @@
     left: 404px;
 }
 
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) and (orientation: portrait) {
-    .page-container .page .menuHome {
-        font-family: 'Furuta-PT-Bold', verdana;
-        font-size: 27.5px;
-        position: absolute;
-        top: 298px;
-        left: 25%;
-    }
-
-    .container .menuTop ul li {
-         float: none !important; 
-    }
-
-    .circle-svg {
-        left: 37% !important;
-    }
-
-    .page-bio .page .photo img {
-        margin: 0 0 0 22px !important;
-    }
-}
-
-@media only screen and (min-width : 320px) and (orientation: landscape) {
-    .page-container .page .menuHome {
-        font-family: 'Furuta-PT-Bold', verdana;
-        font-size: 27.5px;
-        position: absolute;
-        top: 35%;
-        left: 27%;
-    }
-
-    .page-bio .page .photo img {
-        margin: 0 0 0 30px !important;
-    }
-    
-    .circle-svg {
-        left: 37% !important;
-    }
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) and (orientation: portrait) {
-    .page-container .page .menuHome {
-        font-family: 'Furuta-PT-Bold', verdana;
-        font-size: 27.5px;
-        position: absolute;
-        top: 35%;
-        left: 27%;
-    }
-
-    .container .menuTop ul li {
-        float: none !important; 
-    }
-
-    .circle-svg {
-        left: 37% !important;
-    }
-
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) and (orientation: landscape) {
-    .page-container .page .menuHome {
-        font-family: 'Furuta-PT-Bold', verdana;
-        font-size: 27.5px;
-        position: absolute;
-        top: 35%;
-        left: 27%;
-    }
-
-    .circle-svg {
-        left: 37% !important;
-    }
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-    .page-container .page .menuHome {
-        font-family: 'Furuta-PT-Bold', verdana;
-        font-size: 27.5px;
-        position: absolute;
-        top: 298px;
-        left: 37% !important;
-    }
-
-    .circle-svg {
-        left: 50% !important;
-    }
-
-}
-
 .page-container .page .menuHome ul, .container .menuTop ul  {
     list-style: none;
     margin: 0 0 0 0;
@@ -225,7 +130,7 @@
     display: none;
     font-family: 'Furuta-PT-Bold', verdana;
     font-size: 20px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     margin: 71px 0 0 0;
@@ -251,13 +156,14 @@
 .container .footer {
     font-family: 'Montserrat-Regular', verdana;
     font-size: 12px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 70%;
     height: 63px;
     margin: 0 15%;
     z-index: 1;
+    background-color: #fff;
 }
 .container .footer .copyright {
     float: left;
