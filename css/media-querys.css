@@ -1,6 +1,6 @@
 /* Smartphones (portrait and landscape) ----------- */
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
 
     /*GENERICS*/
     /*SIZE*/
@@ -24,7 +24,7 @@
     /*SIZE*/
 }
 
-@media screen and (min-device-width: 321px) and (max-device-width: 375px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
 
     /*GENERICS*/
     /*SIZE*/
@@ -48,7 +48,7 @@
     /*SIZE*/
 }
 
-@media screen and (min-device-width: 376px) and (max-device-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
 
     /*GENERICS*/
     /*SIZE*/
@@ -72,7 +72,7 @@
     /*SIZE*/
 }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
     /*GENERICS*/
 
     /*POSITION*/
@@ -301,7 +301,7 @@
     /*CONTENT FLOAT*/
 }
 
-@media screen and (min-device-width: 426px) and (max-device-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
     .page-bio .page .biotext {
         width: 330px;
     }
