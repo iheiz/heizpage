@@ -1,0 +1,329 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+@media screen and (max-width: 320px) {
+
+    /*GENERICS*/
+    /*SIZE*/
+    .page-container .page .menuHome,
+    .page-bio .page .photo,
+    .page-bio .page .biotitle,
+    .page-bio .page .biotext,
+    .galeriaScroll,
+    .page-galeria .page .gallery,
+    .contentFloat .contentload .gallerytext,
+    .contentFloat .contentload .gallerytext > div > div,
+    .page-investigacion .page .investitle,
+    .page-investigacion .page .investext,
+    .page-investigacion .page .invesgallery,
+    .page-investigacion .page .buttondown,
+    .page-estrategia .page .estrategiatitle,
+    .page-estrategia .page .estrategiagallery,
+    .page-estrategia .page .estrategiatext {
+        width: 290px; /*320*/
+    }
+    /*SIZE*/
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+    /*GENERICS*/
+    /*SIZE*/
+    .page-container .page .menuHome,
+    .page-bio .page .photo,
+    .page-bio .page .biotitle,
+    .page-bio .page .biotext,
+    .galeriaScroll,
+    .page-galeria .page .gallery,
+    .contentFloat .contentload .gallerytext,
+    .contentFloat .contentload .gallerytext > div > div,
+    .page-investigacion .page .investitle,
+    .page-investigacion .page .investext,
+    .page-investigacion .page .invesgallery,
+    .page-investigacion .page .buttondown,
+    .page-estrategia .page .estrategiatitle,
+    .page-estrategia .page .estrategiagallery,
+    .page-estrategia .page .estrategiatext {
+        width: 340px; /*320*/
+    }
+    /*SIZE*/
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+    /*GENERICS*/
+    /*SIZE*/
+    .page-container .page .menuHome,
+    .page-bio .page .photo,
+    .page-bio .page .biotitle,
+    .page-bio .page .biotext,
+    .galeriaScroll,
+    .page-galeria .page .gallery,
+    .contentFloat .contentload .gallerytext,
+    .contentFloat .contentload .gallerytext > div > div,
+    .page-investigacion .page .investitle,
+    .page-investigacion .page .investext,
+    .page-investigacion .page .invesgallery,
+    .page-investigacion .page .buttondown,
+    .page-estrategia .page .estrategiatitle,
+    .page-estrategia .page .estrategiagallery,
+    .page-estrategia .page .estrategiatext {
+        width: 395px; /*550*/
+    }
+    /*SIZE*/
+}
+
+@media screen and (max-width: 425px) {
+    /*GENERICS*/
+
+    /*POSITION*/
+    .page-container .page .menuHome,
+    .page-bio .page .biotitle,
+    .page-bio .page .biotext,
+    .page-bio .page .photo,
+    .page-bio .page .buttondown,
+    .page-galeria .page .gallery,
+    .page-investigacion .page .investitle,
+    .page-investigacion .page .investext,
+    .page-investigacion .page .invesgallery,
+    .page-investigacion .page .buttondown,
+    .page-estrategia .page .estrategiatitle,
+    .page-estrategia .page .estrategiagallery,
+    .page-estrategia .page .estrategiatext {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    /*POSITION*/
+    /*TEXT*/
+    .page-container .page .menuHome,
+    .page-bio .page .photo,
+    .page-bio .page .biotitle,
+    .page-bio .page .biotext,
+    .page-bio .page .buttondown,
+    .contentFloat .contentload .gallerytext > div > div,
+    .page-investigacion .page .investitle,
+    .page-investigacion .page .investext,
+    .page-investigacion .page .invesgallery,
+    .page-investigacion .page .buttondown,
+    .page-estrategia .page .estrategiatitle,
+    .page-estrategia .page .estrategiagallery,
+    .page-estrategia .page .estrategiatext {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /*TEXT*/
+
+    /*GENERICS*/
+
+    .page-container {
+        position: relative;
+        display: inline-block;
+        min-width: 0px;
+        min-height: 0px;
+        overflow: auto;
+    }
+
+    .page-container .page {
+        top: 0px;
+        left: 0px;
+        min-height: auto;
+        margin: 0px;
+    }
+    .page-container svg {
+        top: 0px !important;
+        left: 0px !important;
+        height: 100%;    
+    }
+    .page-container:not(.page-main) .page {
+        margin-top: 90px;
+    }
+    .page-container:not(.page-galeria) .page {
+        margin-bottom: 90px;
+    }
+
+    /*GENERICS*/
+
+    /*PAGE MAIN*/
+
+    .page-container .page .logo {
+        width: 115px;
+        height: 71px;
+        background-size: contain;
+        position: relative;
+        margin: 100px 0px 0px 15px;
+    }
+
+    /*PAGE MAIN*/
+
+    /*NAVIGATION*/
+    .container .menuTop {
+        margin-top: 25px;
+    }
+    .nav > li {
+        width: 100%;
+    }
+    .page-container .page .menuHome {
+        margin-top: 50px;
+    }
+    .page-container .page .menuHome li span {
+        display: block;
+    }
+    /*NAVIGATION*/
+
+    /*PAGE BIO*/
+    .page-bio .page {
+
+    }
+    .page-bio .page .bio-info svg {
+        left: 0px;
+    }
+    .page-bio .page .photo {
+        height: auto;
+    }
+    .page-bio .page .photo img {
+        width: 100%;
+    }
+    /*PAGE BIO*/
+
+    /*PAGE GALLERY*/
+    .page-galeria .page {
+        height: auto;
+    }
+    /*PAGE GALLERY*/
+    
+    /*INVESTIGATION*/
+    .page-investigacion .page .invesgallery {
+        height: auto;
+    }
+    .page-investigacion .page .invesgallery .img-investigation-1 {
+        display: block;
+    }
+    .page-investigacion .page .invesgallery .img-investigation-2,
+    .page-investigacion .page .invesgallery .img-investigation-3 {
+        display: inline-block;
+        width: 49.3%;
+    }
+    .page-investigacion .page .invesgallery a {
+        position: relative !important;
+    }
+    .page-investigacion .page .invesgallery a img {
+        position: relative !important;
+        width: 100% !important;
+        top: 0px !important;
+        left: 0px !important;
+    }
+
+    /*INVESTIGATION*/
+
+    /*FOOTER*/
+    .page-container .page .menuHome {
+
+    }
+    .container .footer {
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+    .container .footer .copyright,
+    .container .footer .email {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        float: none;
+    }
+    .container .footer .icon {
+        float: none;
+        margin: 0 17px 0 17px;
+        display: inline-block;
+    }
+    /*FOOTER*/
+
+    /*CONTENT FLOAT*/
+    .ui-page .contentFloat {
+        width: 100% !important;
+        height: auto !important;
+        left: 0px;
+        top: 0px;
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+    }
+    .contentFloat .contentload .contentgallery,
+    .contentFloat .contentload .galleryimage {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .contentFloat .contentload .galleryimage .container-fluid .row:last-child div:first-child {
+        margin-top: 0px !important;
+        position: absolute;
+        z-index: 9;
+        top: 45%;
+    }
+    .contentFloat .contentload .galleryimage .container-fluid .row:last-child div:last-child {
+        margin-top: 0px !important;
+        position: absolute;
+        top: 45%;
+        right: 0px;
+    }
+    .contentFloat .contentload .galleryimage .container-fluid .gaimg {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .contentFloat .contentload .gallerytext > div > div {
+        margin-left: 15px !important;
+        margin-bottom: 15px;
+    }
+
+    .ui-popup-container {
+        max-width: 100% !important;
+        height: 100% !important;
+        top: 0px !important;
+        left: 0px !important;
+        position: fixed !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+        padding-top: 50px !important;
+    }
+    .ui-popup-container .img-responsive {
+        height: auto !important;
+    }
+
+    .page-estrategia .page .estrategiagallery {
+        height: auto !important;
+    }
+    .page-estrategia .page .estrategiagallery img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+    /*CONTENT FLOAT*/
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .page-bio .page .biotext {
+        width: 330px;
+    }
+    .page-galeria .page .gallery {
+        left: 140px;
+        width: 700px;
+    }
+    .page-galeria .page .gallery .gaimg {
+        width: 335px;
+    }
+    .page-investigacion .page .investitle {
+        left: 140px;
+    }
+    .page-investigacion .page .investext {
+        left: 140px;
+        width: 275px;
+    } 
+    .page-investigacion .page .buttondown {
+        left: 140px;
+        top: 530px;
+    }
+    .page-investigacion .page .invesgallery {
+        left: 445px;
+    }
+}
