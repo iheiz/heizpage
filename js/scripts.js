@@ -66,177 +66,6 @@ $(function() {
     });
 
 
-    $('.ga01').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj1.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-
-
-    $('.ga02').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj2.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga03').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj3.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga04').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj4.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga05').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj5.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga06').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj6.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga07').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj7.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga08').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj8.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga09').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj9.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga10').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj10.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga11').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj11.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga12').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj12.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga13').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj13.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga14').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj14.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-    $('.ga15').click(function(e){ 
-        e.preventDefault();
-        console.log("entra a click");
-
-        $.get( "pagegallery/proj15.html", function( data ) {
-            console.log("entra a get");
-            $( ".contentload" ).html( data );
-            $(".contentFloat").show();
-        });
-
-    });
-
-
-
-
 
 
 
@@ -246,24 +75,24 @@ $(function() {
     sizeChanges();
     $(window).resize(function() { sizeChanges(); });
     function sizeChanges(){
-        winWidth  = $(window).width();
+        winWidth  = $(window).outerWidth();
         winHeight = $(window).height();
         var pages = $(".page-container").length;
 
 
         $(".contentFloat")
             .width( winWidth-50 )
-            .height( winHeight-50 )
+            //.height( winHeight-50 )
             .css({'margin-top': -((winHeight-50)/2), 'margin-left': -((winWidth-50)/2)  });
 
 
         $(".page-container")
-            .width( winWidth )
-            .height( winHeight );
+            //.width( winWidth );
+            //.height( winHeight );
 
         $(".pages-container")
-            .width( winWidth * pages )
-            .height( winHeight )
+            //.width( winWidth * pages )
+            //.height( winHeight );
             .css({left: -winWidth * indexPage});
 
 
@@ -304,3 +133,69 @@ $(function() {
 
 
 
+
+
+
+/* new Script Page*/
+$('.click').on("click",function(){
+    var pageOld = $('.click.active').attr('data-page');
+    var pageNew = $(this).attr('data-page'); 
+    if(pageOld == undefined){
+        pageOld = 'page-menu'
+    }
+    animate(pageOld,pageNew)
+});
+$('.gaimg').on("click",function(){
+    var slide = $(this).attr('data-slide');
+    slideGallery(slide)
+});
+function slideGallery(number){
+    $('.page-gallery-content').addClass('fadeOutLeft animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('.page-gallery-content').css('display','none').removeClass('fadeOutLeft animated');
+        $('.page-gallery-content .carousel-inner').html('');
+    });
+    setTimeout(function(){
+        for (i = 0; i < dataSlider.length; i++) { 
+            if(dataSlider[i].id = number){
+                $('.page-gallery-content .title').html(dataSlider[i].title);
+                $('.page-gallery-content .description').html(dataSlider[i].description);
+                for (j = 0; j < dataSlider[i].images.length; j++) { 
+                    $('.page-gallery-content .carousel-inner').append('<div class="item active"><img alt="'+dataSlider[i].images[j].title+'" src="'+dataSlider[i].images[j].image+'"><div class="carousel-caption"><h3>'+dataSlider[i].images[j].title+'</h3></div></div>');
+                }
+                break
+            }
+        }
+        $(".page-gallery-content").css('display','block').addClass('fadeInRight animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(".page-gallery-content").css('display','block').removeClass('fadeInRight animated');
+        });
+    }, 1100);
+};
+function animate(pageOld,pageNew){
+    $('.'+pageOld).addClass('fadeOutLeft animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('.'+pageOld).css('display','none').removeClass('fadeOutLeft animated');
+    });
+    setTimeout(function(){
+        $('.'+pageNew).css('display','table-cell').addClass('fadeInRight animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $('.'+pageNew).css('display','table-cell').removeClass('fadeInRight animated');
+        });
+    }, 1100);
+}
+var dataSlider = [
+     {
+        id:1,
+        title:'The Becatles poster 1',
+        description:'Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.',
+        images:[
+             {
+                 image:'uno.jpg',
+                 title: 'interior'
+             },{
+                 image:'uno.jpg',
+                 title: 'interior'
+             },{
+                 image:'uno.jpg',
+                 title: 'interior'
+             }
+         ]
+     }
+]

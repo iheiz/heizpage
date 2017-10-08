@@ -33,285 +33,245 @@
     </head>
     <body>
  
-        <div class="container">
-
-        	<footer class="footer">
+        <div class="content">
+    <!-- Menu Top -->
+            <div class="menuTop">
+                <div class="page-content">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <div class="logoSmall click clk_home col-md-4" data-page="page-menu"></div>
+                                <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="border-color: #3f3f3f">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar" style="background-color: #3f3f3f"></span>
+                                    <span class="icon-bar" style="background-color: #3f3f3f"></span>
+                                    <span class="icon-bar" style="background-color: #3f3f3f"></span>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" style="background-color: white;" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">                                
+                                    <li class="click clk_bio" data-page="page-bio"><span>BIO</span></li>
+                                    <li class="click clk_galeria" data-page="page-galeria"><span>GALERIA</span></li>
+                                    <li class="click clk_investigacion" data-page="page-investigacion"><span>INVESTIGACIÓN</span></li>
+                                    <li class="click clk_estrategia" data-page="page-estrategia"><span>ESTRATEGIA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    <!-- End Menu Top -->
+    <!-- Page container Principal-->
+            <div class="pages-container">
+        <!-- Page Menu -->
+                <div class="page-menu">
+                    <div class="page-content">
+                        <div class="menu-content">
+                            <div class="menu-cell">
+                                <div class="menu-logo">
+                                    <img class="logo" src="images/logoheiz.svg">
+                                </div>
+                            </div>
+                            <div class="menu-cell menu-bar">
+                                <ul>
+                                    <li class="click clk_bio" data-page="page-bio"><span>BIO</span></li>
+                                    <li class="click clk_galeria" data-page="page-galeria"><span>GALERIA</span></li>
+                                    <li class="click clk_investigacion" data-page="page-investigacion"><span>INVESTIGACIÓN</span></li>
+                                    <li class="click clk_estrategia" data-page="page-estrategia"><span>ESTRATEGIA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- End Page Menu -->
+        <!-- Page Bio -->
+                <div class="page-display page-bio">
+                    <div class="page-content">
+                        <div class="page-display-content">
+                            <div class="page-display-cell">
+                                    <img id="photoBio" class="esimg1 click" src="images/bio1.jpg">
+                            </div>
+                            <div class="page-display-cell">
+                                <div class="page-display-content-cell">
+                                    <h1>HEYDY BÁMACA</h1>
+                                    <p>
+                                        Como diseñadora, realizo la creatividad y diseño de marca cuyo trabajo encapsula todos los esfuerzos en los productos para diversos clientes mientras cuento historias atractivas en la intersección de la ilustración y el marketing.                        
+                                    </p>
+                                    <div class="icon buttondown col-xs-12 col-md-7"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar CV</a></div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+        <!-- End Page Bio -->
+        <!-- Page Galeria -->
+                <div class="page-display page-galeria">
+                    <div class="page-content">
+                        <div class="page-gallery-view">
+                            <div class="page-gallery-content">
+                                <h1 class="title">The Becatles poster 1</h1>
+                                <div class="carousel slide" id="carousel-gallery" data-ride="carousel"> 
+                                    <div class="carousel-inner" role="listbox"> 
+                                        <div class="item active"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3> 
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> 
+                                            </div> 
+                                        </div>
+                                        <div class="item"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3>
+                                            </div> 
+                                        </div>
+                                    </div> 
+                                    <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <p class="description">
+                                    Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery">
+                            <div class="galeriaScroll">
+                                <div class="gaimg" data-slide="1" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="2" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="3" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="4" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="5" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="6" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="7" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="8" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="9" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="10" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="11" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="12" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="13" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="14" style='background: url("images/galeria/viewproj1.png");'></div>
+                                <div class="gaimg" data-slide="15" style='background: url("images/galeria/viewproj1.png");'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- End Page Galeria -->
+        <!-- Page Investigation -->
+                <div class="page-display page-investigacion">
+                    <div class="page-content">
+                        <div class="page-display-content">
+                            <div class="page-display-cell">
+                                <div class="page-display-content-cell">
+                                    <h1>Pintura digital de Nacho Yagüe en la ambientación de escenarios para el videojuego Assassin’s Creed Unity</h1>
+                                </div>
+                                <div class="carousel slide" id="carousel-gallery" data-ride="carousel"> 
+                                    <div class="carousel-inner" role="listbox"> 
+                                        <div class="item active"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3> 
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> 
+                                            </div> 
+                                        </div>
+                                        <div class="item"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3>
+                                            </div> 
+                                        </div>
+                                    </div> 
+                                    <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="page-display-content-cell">
+                                    <p >
+                                        Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.
+                                    </p>
+                                    <div class="icon buttondown col-xs-12 col-md-7"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar CV</a></div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+        <!-- End Page Investigation -->
+        <!-- Page Investigation -->
+                <div class="page-display page-estrategia">
+                    <div class="page-content">
+                        <div class="page-display-content">
+                            <div class="page-display-cell">
+                                <div class="page-display-content-cell">
+                                    <h1>Pintura digital de Nacho Yagüe en la ambientación de escenarios para el videojuego Assassin’s Creed Unity</h1>
+                                </div>
+                                <div class="carousel slide" id="carousel-gallery" data-ride="carousel"> 
+                                    <div class="carousel-inner" role="listbox"> 
+                                        <div class="item active"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3> 
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> 
+                                            </div> 
+                                        </div>
+                                        <div class="item"> 
+                                            <img alt="900x500" data-src="holder.js/900x500/auto/#777:#777" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM3NzcKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWVmOTNmOWMxMiB0ZXh0IHsgZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZWY5M2Y5YzEyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMzMy4yMTA5Mzc1IiB5PSIyNzAuMSI+OTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true"> 
+                                            <div class="carousel-caption"> 
+                                                <h3>First slide label</h3>
+                                            </div> 
+                                        </div>
+                                    </div> 
+                                    <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div class="page-display-content-cell">
+                                    <p >
+                                        Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.
+                                    </p>
+                                    <div class="icon buttondown col-xs-12 col-md-7"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar CV</a></div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+    <!-- End Page Investigation -->
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content">
+                <div class="col-sm-4">
                     <span class="copyright">© Copyright 2017</span>
+                </div>
+                <div class="col-sm-4">
                     <span class="email">iheiz@icloud.com</span>
+                </div>
+                <div class="col-sm-4">
                     <span class="icon mail click clk_mail"></span>
                     <span class="icon be click clk_be"></span>
                     <span class="icon instagram click clk_instagram"></span>
-        </footer><!-- footer -->
-            <!--//////////////////-->
-            <div class="menuTop">
-                <nav class="navbar">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <div class="logoSmall click clk_home col-md-4"></div>
-                            <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="border-color: #3f3f3f">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar" style="background-color: #3f3f3f"></span>
-                                <span class="icon-bar" style="background-color: #3f3f3f"></span>
-                                <span class="icon-bar" style="background-color: #3f3f3f"></span>
-                            </a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" style="background-color: white;" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">                                
-                                <li class="click clk_bio"><span>BIO</span></li>
-                                <li class="click clk_galeria"><span>GALERIA</span></li>
-                                <li class="click clk_investigacion"><span>INVESTIGACIÓN</span></li>
-                                <li class="click clk_estrategia"><span>ESTRATEGIA</span></li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div>
-                </nav>
-                <!-- <div class="col-md-8">
-                    <ul>
-                        <li class="click clk_bio"><span>BIO</span></li>
-                        <li class="click clk_galeria"><span>GALERIA</span></li>
-                        <li class="click clk_investigacion"><span>INVESTIGACIÓN</span></li>
-                        <li class="click clk_estrategia"><span>ESTRATEGIA</span></li>
-                    </ul>
-                </div> -->
-            </div><!-- .menuTop -->
-            
-            <!--//////////////////-->
-            <div class="pages-container">
-                <!--//////////////////-->
-                <!--//////////////////-->
-                <div class="page-container page-main">
-                    <div class="page text-center circle-svg">
-                        <svg width="100%"  height="100%" style="position:absolute;left:275px;top:65px;z-index:-1;">
-                            <circle cx="290" cy="290" r="25%" stroke="#E8E8E9" stroke-width="2" fill="transparent" />
-                            <line x1="0" y1="219" x2="177" y2="219" style="stroke:#E8E8E9;stroke-width:2" />
-                            Sorry, your browser does not support inline SVG.  
-                        </svg>
-                    </div>
-                    <div class="page text-center">
-                        <div class="logo click clk_home"></div>
-                        <div class="menuHome">
-                            <ul>
-                                <li class="click clk_bio"><span>BIO</span></li>
-                                <li class="click clk_galeria"><span>GALERIA</span></li>
-                                <li class="click clk_investigacion"><span>INVESTIGACIÓN</span></li>
-                                <li class="click clk_estrategia"><span>ESTRATEGIA</span></li>
-                            </ul>
-                        </div>
-                    </div><!-- .page -->
-                </div><!-- .page-main -->
-                <!--//////////////////-->
-                <!--//////////////////-->
-                <div class="page-container page-bio">
-                    <div class="page">
-
-                        <div class="photo col-xs-12 col-md-5">
-                            <img id="photoBio" class="esimg1 click" src="images/bio1.jpg">
-                        </div>
-                        <svg class="col-xs-12" width="641"  height="669" style="position:absolute;left:414px;top:100px;z-index:-1;">
-                            <line x1="0"   y1="592" x2="86"  y2="0"   style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="86"  y1="0"   x2="641" y2="77"  style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="641" y1="77"  x2="534" y2="669" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="534" y1="669" x2="0"   y2="592" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="120" y1="334" x2="304" y2="334" style="stroke:#8A8A8A;stroke-width:1" />
-                        </svg>
-                        <div class="biotitle col-xs-12 col-md-7">
-                            HEYDY BÁMACA 
-                        </div>
-                        <div class="biotext col-xs-12 col-md-7">
-                            Como diseñadora, realizo la creatividad y diseño de marca cuyo trabajo encapsula todos los esfuerzos en los productos para diversos clientes mientras cuento historias atractivas en la intersección de la ilustración y el marketing.                        </div>
-
-                        <div class="icon buttondown click col-xs-12 col-md-7"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar CV</a></div>
-
-                    </div><!-- .page -->
-                </div><!-- .page-bio -->
-                <!--//////////////////-->
-                <!--//////////////////-->
-                <div class="page-container page-galeria">
-                    <div class="page">
-                        <svg width="641"  height="669" style="position:absolute;left:414px;top:100px;z-index:-1;">
-                            <line x1="0"   y1="592" x2="86"  y2="0"   style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="86"  y1="0"   x2="641" y2="77"  style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="641" y1="77"  x2="534" y2="669" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="534" y1="669" x2="0"   y2="592" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="127" y1="394" x2="304" y2="394" style="stroke:#8A8A8A;stroke-width:1" />
-                        </svg>
-                        <div class="gallery">
-                            <div class="galeriaScroll">
-                                <div class="gaimg ga01 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga02 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga03 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga04 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga05 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga06 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga07 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga08 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga09 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga10 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga11 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga12 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga13 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga14 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                                <div class="gaimg ga15 click" style='background: url("images/galeria/viewproj1.png");'></div>
-                            </div>
-                        </div>
-
-                    </div><!-- .page -->
-                </div><!-- .page-galeria -->
-                <!--//////////////////-->
-                <!--//////////////////-->
-                <div class="page-container page-investigacion">
-                    <div class="page">
-                        <svg width="1146"  height="740" style="position:absolute;left:69px;top:101px;z-index:-1;">
-                            <line x1="613"  y1="0"   x2="1146" y2="173" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="1146" y1="173" x2="960"  y2="740" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="960"  y1="740" x2="426"  y2="567" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="426"  y1="567" x2="613"  y2="0"   style="stroke:#E8E8E9;stroke-width:2" />
-
-                            <line x1="0" 	y1="353" x2="177"  y2="353" style="stroke:#8A8A8A;stroke-width:1" />
-                        </svg>
-                        <div class="investitle">
-                            Pintura digital de Nacho Yagüe en la ambientación<br>
-                            de escenarios para el videojuego Assassin’s Creed Unity 
-                        </div>
-                        <div class="investext">
-                            Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.
-                        </div>
-                        <div class="invesgallery">
-                            <div data-role="popup" id="myPopup1" style="border:0px;"> 
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <a href="#pageone" data-rel="back">
-                                                <img src="images/inves_foto1.jpg" class="img-responsive" style="top: 15px; height: 758px;" alt="Skaret View"> 
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div data-role="popup" id="myPopup2" style="border:0px;"> 
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <a href="#pageone" data-rel="back" >
-                                                <img src="images/inves_foto2.jpg" class="img-responsive" style="top: 15px; height: 758px;" alt="Skaret View"> 
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div data-role="popup" id="myPopup3" style="border:0px;"> 
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <a href="#pageone" data-rel="back">
-                                                <img src="images/inves_foto3.jpg" class="img-responsive" style="top: 15px; height: 758px;" alt="Skaret View"> 
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> 
-                            <a href="#myPopup1" data-rel="popup" data-position-to="window"> 
-                                <img  class="inimg1 click" src="images/inves_foto1_small.png">
-                            </a> 
-                            <a href="#myPopup2" data-rel="popup" data-position-to="window"> 
-                                <img class="inimg2 click" src="images/inves_foto2_small.png">
-                            </a>
-                            <a href="#myPopup3" data-rel="popup" data-position-to="window"> 
-                                <img class="inimg3 click" src="images/inves_foto3_small.png">
-                            </a>
-                        </div>
-                        <div class="icon buttondown click"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar Investigación</a></div>
-
-                    </div><!-- .page -->
-                </div><!-- .page-investigacion -->
-                <!--//////////////////-->
-                <!--//////////////////-->
-                <div class="page-container page-estrategia">
-                    <div class="page">
-
-                        <svg width="632"  height="608" style="position:absolute;left:400px;top:106px;z-index:-1;">
-                            <line x1="513"  y1="0"   x2="632" y2="482" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="632" y1="482" x2="112"  y2="608" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="112"  y1="608" x2="0"  y2="127" style="stroke:#E8E8E9;stroke-width:2" />
-                            <line x1="0"  y1="127" x2="513"  y2="0"   style="stroke:#E8E8E9;stroke-width:2" />
-
-                            <line x1="120" 	y1="338" x2="294"  y2="338" style="stroke:#8A8A8A;stroke-width:1" />
-                        </svg>
-
-                        <div class="estrategiatitle">
-                            Apartamento Semilla 
-                        </div>
-
-                        <div class="estrategiagallery">
-                            <!--<img class="esimg1 click" data-src="holder.canvas/315x153?bg=000000&fg=FFFFFF&text=315x153">
-<img class="esimg1 click" data-src="holder.canvas/215x104?bg=000000&fg=FFFFFF&text=215x104">-->
-
-                            <div data-role="popup" id="myPopup4" style="border:0px;"> 
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-12">
-
-                                            <a href="#pageone" data-rel="back">
-                                                <img src="images/e11.jpg" class="img-responsive" style="height:758px; top:25px;" alt="Skaret View"> 
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> 
-                            <div data-role="popup" id="myPopup5" style="border:0px"> 
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-
-                                            <a href="#pageone" data-rel="back" >
-                                                <img src="images/e22.jpg" class="img-responsive" style="height:758px; top:25px;" alt="Skaret View"> 
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <a href="#myPopup4" data-rel="popup" data-position-to="window"> 
-                                <img class="esimg1 click" width="315" height="153" src="images/e11.jpg">
-                            </a> 
-                            <a href="#myPopup5" data-rel="popup" data-position-to="window"> 
-                                <img class="esimg1 click" width="215" height="104" src="images/e22.jpg">
-                            </a> 
-
-                        </div>
-
-                        <div class="estrategiatext">Duis sit amet bibendum magna. Donec eget diam nisi. Cras auctor, sem et tempus aliquet, lorem metus porttitor nulla, vitae fermentum nisi arcu id mi. Nullam sit amet tellus et eros varius vulputate. Fusce ac tortor semper, sagittis massa vel, mattis risus. Cras ac neque ut tellus tristique facilisis sit amet vitae magna. Donec laoreet nulla in tortor bibendum, quis ullamcorper nulla vulputate.</div>
-
-                        <div class="icon buttondown click"><a href="asignacion2ndoSemestre2016.pdf" target="_blank" download>Descargar Estrategia</a></div>
-
-                    </div><!-- .page -->
-                </d`    iv><!-- .page-estrategia -->
-                <!--//////////////////-->
-                <!--//////////////////-->
-
-                <!--//////////////////-->
-               
-            </div><!-- .pages-container -->
-        </div><!-- .container -->
-        <div class="contentFloat">
-            <span class="close"></span>
-            <div class="contentload">
-                
+                </div>
             </div>
-        </div>
-
+        </footer><!-- footer -->
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.scrollbar.js"></script>
         <script src="js/holder.js"></script>
         <script src="js/scripts.js"></script>
-
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
     </body>
